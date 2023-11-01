@@ -34,6 +34,7 @@ btn.addEventListener('click', () => { alert("Hello World"); });
 
 // The arrow represents an arrow function, it's just a shorter way of writing in JavaScript
 // it's essentially saying the following, re-written with a separate function
+// the course says this is a better way to write it out if the function is something that would be used in multiple places
 //
 // let anonymous = function () {
 //     alert("Hello World");
