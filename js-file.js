@@ -28,8 +28,23 @@ pInsideDiv.textContent = 'ME TOO!';
 
 // button query
 const btn = document.querySelector('#btn');
-btn.addEventListener('click', () => { alert("Hello World"); });
+// btn.addEventListener('click', () => { alert("Hello World"); });
 
+
+
+
+btn.addEventListener('click', function (e) {            // console logs what was used to click the button (e.g., mouse pointer)
+    console.log(e);
+});
+
+
+btn.addEventListener('click', function (e) {            // console logs what exactly was pressed (e.g., the button)
+    console.log(e.target);
+});
+
+btn.addEventListener('click', function (e) {            // will apply a blue background to the clicked target (I guess useful for debugging?)
+    e.target.style.background = 'blue';
+});
 
 
 // The arrow represents an arrow function, it's just a shorter way of writing in JavaScript
