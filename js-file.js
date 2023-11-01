@@ -18,17 +18,28 @@ blueText.textContent = 'I\'m a blue h3!';
 blueText.classList.add('blue-text');
 
 
-// const subcontent = document.createElement('div');
-// subcontent.classList.add('subcontent');
-// content.
+const pinkDiv = document.createElement('div');
+pinkDiv.classList.add('pink-border');
+
+const h1InsideDiv = document.createElement('h1');
+h1InsideDiv.textContent = 'I\'m in the div!';
+
+const pInsideDiv = document.createElement('p');
+pInsideDiv.textContent = 'ME TOO!';
+
+// Appends <h1> and <p> to the <div> of pinkDiv
+pinkDiv.appendChild(h1InsideDiv);
+pinkDiv.appendChild(pInsideDiv);
 
 
-
+// Appends elements to the container (which is a div)
 container.appendChild(content);
 container.appendChild(redText);
 container.appendChild(blueText);
+container.appendChild(pinkDiv);
 
-
-//or could do container.append(content, redText) to make it cleaner
+//or could do: 
+// pinkDiv.append(h1InsideDiv, pInsideDiv); and
+// container.append(content, redText, blueText, pinkDiv); to make it cleaner
 
 
