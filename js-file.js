@@ -2,7 +2,7 @@
 //
 //
 
-
+// container query
 const container = document.querySelector('#container');
 
 const content = document.createElement('div');
@@ -17,7 +17,6 @@ const blueText = document.createElement('h3');
 blueText.textContent = 'I\'m a blue h3!';
 blueText.classList.add('blue-text');
 
-
 const pinkDiv = document.createElement('div');
 pinkDiv.classList.add('pink-border');
 
@@ -26,6 +25,23 @@ h1InsideDiv.textContent = 'I\'m in the div!';
 
 const pInsideDiv = document.createElement('p');
 pInsideDiv.textContent = 'ME TOO!';
+
+// button query
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', () => { alert("Hello World"); });
+
+
+
+// The arrow represents an arrow function, it's just a shorter way of writing in JavaScript
+// it's essentially saying the following, re-written with a separate function
+//
+// let anonymous = function () {
+//     alert("Hello World");
+// }
+// btn.addEventListener('click', anonymous) 
+
+
+
 
 // Appends <h1> and <p> to the <div> of pinkDiv
 pinkDiv.appendChild(h1InsideDiv);
